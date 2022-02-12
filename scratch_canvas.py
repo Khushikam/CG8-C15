@@ -1,0 +1,32 @@
+import turtle
+
+turtle.pensize(4)
+turtle.pencolor("OliveDrab")
+turtle.setpos(-50, 0)
+
+def repeated_tasks(c,s,a):
+    turtle.fillcolor(c)
+    turtle.begin_fill()
+    for i in range (0, 3,1 ):               
+        turtle.forward(s) 
+        turtle.left(a)
+    turtle.end_fill()
+    
+repeated_tasks('Olive',175,120)
+
+turtle.forward(25)
+turtle.right(90)
+
+repeated_tasks('PeachPuff',125,90)
+
+turtle.penup()
+turtle.forward(62.5)
+turtle.left(90)
+turtle.forward(25)
+turtle.right(90)
+turtle.pendown()
+
+turtle.begin_fill()
+turtle.circle(15)
+
+turtle.hideturtle()
